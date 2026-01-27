@@ -28,7 +28,7 @@ requirements:
     - python
     - panelaero
     - matplotlib-base
-    - numpy
+    - numpy<2.4.0
     - scipy
     - h5py
     - pytables
