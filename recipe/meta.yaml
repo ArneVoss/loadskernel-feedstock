@@ -1,13 +1,13 @@
 {% set name = "LoadsKernel" %}
-{% set version = "2025.01" %}
+{% set version = "2026.01" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://github.com/DLR-AE/LoadsKernel/archive/refs/tags/2025.01.tar.gz
-  sha256: f808cfa5ff3aa247c15c68c9afa837d2aadee16a22098c7abe9865131a77a47d
+  url: https://github.com/DLR-AE/LoadsKernel/archive/refs/tags/2026.01.tar.gz
+  sha256: d56f8498302d1fe07efc13a7dda5363bfe0801163a08797d6f05f3d169b18e22
   # generated with curl -sL <url/to/*.tar.gz> | openssl sha256
   
 build:
@@ -30,7 +30,6 @@ requirements:
     - matplotlib-base
     - numpy
     - scipy
-    - psutil
     - h5py
     - pytables
     - pyyaml
@@ -60,7 +59,7 @@ outputs:
         - mayavi
         - traits
         - traitsui
-        - pyface
+        - pyside6
         - jupyter
         - {{ pin_subpackage('loadskernel') }}
     test:
