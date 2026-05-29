@@ -1,9 +1,6 @@
-{% set name = "LoadsKernel" %}
-{% set version = "2026.05" %}
-
 package:
-  name: {{ name|lower }}
-  version: {{ version }}
+  name: loadskernel
+  version: "2026.05"
 
 source:
   url: https://github.com/DLR-AE/LoadsKernel/archive/refs/tags/2026.05.tar.gz
